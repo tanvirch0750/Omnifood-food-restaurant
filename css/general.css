@@ -78,6 +78,11 @@ strong {
   font-weight: 500;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
 /* REUSABLE GRID */
 .container {
   max-width: 120rem;
@@ -160,6 +165,7 @@ strong {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -169,6 +175,11 @@ strong {
   text-decoration: none;
   transition: all 300ms;
   font-weight: 600;
+
+  /* only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn-full:link,
@@ -208,6 +219,19 @@ strong {
 .link:active {
   color: #cf711f;
   border-bottom: 1px solid transparent;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+  font-weight: 400;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 /* list component */
