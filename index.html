@@ -22,6 +22,11 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
     <title>Omnifood</title>
   </head>
   <body>
@@ -34,11 +39,11 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testimonial</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li><a class="main-nav-link" href="#testimonials">Testimonial</a></li>
+          <li><a class="main-nav-link" href="#price">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
 
@@ -64,10 +69,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn-full margin-right-sm"
+            <a href="#cta" class="btn btn-full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn-outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn-outline">Learn more &darr;</a>
 
             <div class="delivered-meals">
               <div class="delivered-imgs">
@@ -96,7 +101,7 @@
       <!-- ================================
                 FEATURED IN SECTION
       ================================= -->
-      <section class="section-featured">
+      <section class="section-featured" id="feature">
         <div class="container">
           <h2 class="heading-featured-in">As featured in</h2>
           <div class="logos">
@@ -118,7 +123,7 @@
       <!-- ================================
              HOW IT WORKS SECTION
       ================================= -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -192,7 +197,7 @@
       <!-- ================================
                   MEALS SECTION
       ================================= -->
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheading">meals</span>
           <h2 class="heading-secondary">
@@ -314,7 +319,7 @@
       <!-- ================================
               TESTIMONIAL SECTION
       ================================== -->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -452,7 +457,7 @@
       <!-- ================================
               PRICING & FEATURE SECTION
       ================================== -->
-      <div class="section-pricing">
+      <div class="section-pricing" id="price">
         <div class="container">
           <span class="subheading">pricing</span>
           <h2 class="heading-secondary">
@@ -563,7 +568,7 @@
       <!-- ================================
               CALL TO ACTION SECTION
       ================================== -->
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -693,7 +698,5 @@
         </nav>
       </div>
     </footer>
-
-    <script src="js/script.js"></script>
   </body>
 </html>
